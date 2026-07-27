@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | HotelHub AI</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1>HotelHub AI</h1>
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Back To Top -->
+    <button id="topBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-buildings-fill"></i>
+                HotelHub AI
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <button id="themeBtn" class="theme-btn">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+
+                    <a href="login.html" class="login-btn">
+                        <i class="bi bi-person-fill"></i>
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+
+        <div class="overlay"></div>
+
+        <div class="container">
+
+            <div class="hero-content text-center" data-aos="fade-up">
+
+                <span class="hero-badge">
+                    📞 Contact HotelHub AI
+                </span>
+
+                <h1>
+                    We'd Love to Hear From You
+                </h1>
+
+                <p>
+                    Have questions about bookings, services, or your stay?
+                    Our team is available 24/7 to help you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+                              <!-- Address -->
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+
+                    <div class="info-card">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <h4>Address</h4>
+
+                        <p>Rajkot, Gujarat, India</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="info-card">
+
+                        <i class="bi bi-telephone-fill"></i>
+
+                        <h4>Phone</h4>
+
+                        <p>+91 98765 43210</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="info-card">
+
+                        <i class="bi bi-envelope-fill"></i>
+
+                        <h4>Email</h4>
+
+                        <p>support@hotelhubai.com</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Working Hours -->
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+
+                    <div class="info-card">
+
+                        <i class="bi bi-clock-fill"></i>
+
+                        <h4>Working Hours</h4>
+
+                        <p>24 Hours • 7 Days</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Form -->
+
+    <section class="contact-form-section py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <!-- Form -->
+
+                <div class="col-lg-7" data-aos="fade-right">
+
+                    <div class="contact-card">
+
+                        <h2>Send Us a Message</h2>
+
+                        <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+
+                        <form>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Full Name"
+                                           required>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <input type="email"
+                                           class="form-control"
+                                           placeholder="Email Address"
+                                           required>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <input type="tel"
+                                           class="form-control"
+                                           placeholder="Phone Number">
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Subject">
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <textarea class="form-control"
+                                              rows="6"
+                                              placeholder="Write your message..."
+                                              required></textarea>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <button type="submit" class="send-btn">
+
+                                        <i class="bi bi-send-fill"></i>
+
+                                        Send Message
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <!-- Map -->
+                <div class="col-lg-5" data-aos="fade-left">
+
+                    <div class="map-card">
+                                          <div class="map-card">
+
+                        <iframe
+                            src="https://www.google.com/maps?q=Rajkot,Gujarat&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="faq py-5">
+
+        <div class="container">
+
+            <div class="section-title text-center mb-5">
+
+                <span>FAQs</span>
+
+                <h2>Frequently Asked Questions</h2>
+
+                <p>Find quick answers to common questions.</p>
+
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+
+                            How can I book a room?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq1"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Simply browse available rooms, select your preferred option,
+                            choose your dates, and confirm your booking.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+
+                            Can I cancel my booking?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq2"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Yes. You can cancel according to the hotel's cancellation policy.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+
+                            Is online payment secure?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq3"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Yes. We use secure encrypted payment gateways for every transaction.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+
+                            Do you provide 24/7 customer support?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq4"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Yes! Our support team is available 24 hours a day, 7 days a week.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="contact-cta py-5">
+
+        <div class="container">
+
+            <div class="cta-box text-center" data-aos="zoom-in">
+
+                <h2>Need Instant Help?</h2>
+
+                <p>
+
+                    Our support team is always ready to help you with bookings,
+                    cancellations, and hotel information.
+
+                </p>
+
+                <a href="tel:+919876543210" class="cta-btn">
+
+                    <i class="bi bi-telephone-fill"></i>
+
+                    Call Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row gy-5">
+                                <!-- Logo -->
+
+                <div class="col-lg-4">
+
+                    <h2 class="footer-logo">
+                        <i class="bi bi-buildings-fill"></i>
+                        HotelHub AI
+                    </h2>
+
+                    <p class="footer-text">
+                        Experience luxury like never before with smart hotel booking,
+                        premium hospitality, and world-class customer service.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="col-lg-2 col-md-6">
+
+                    <h5>Quick Links</h5>
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="rooms.html">Rooms</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Services</h5>
+
+                    <ul>
+
+                        <li><a href="#">Hotel Booking</a></li>
+
+                        <li><a href="#">Restaurant</a></li>
+
+                        <li><a href="#">Spa & Wellness</a></li>
+
+                        <li><a href="#">Conference Hall</a></li>
+
+                        <li><a href="#">Airport Pickup</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="col-lg-3">
+
+                    <h5>Contact Info</h5>
+
+                    <p><i class="bi bi-geo-alt-fill"></i> Rajkot, Gujarat</p>
+
+                    <p><i class="bi bi-envelope-fill"></i> support@hotelhubai.com</p>
+
+                    <p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+
+                <p class="mb-2 mb-md-0">
+                    © 2026 HotelHub AI. All Rights Reserved.
+                </p>
+
+                <p class="mb-0">
+                    Designed for Hackathon ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Contact JS -->
+
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
+
+<style type="text/css" media="all">
+  /*================ GOOGLE FONT ================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*================ ROOT =================*/
+
+:root{
+    --bg:#050505;
+    --card:#111;
+    --glass:rgba(255,255,255,.08);
+    --text:#fff;
+    --text2:#cfcfcf;
+    --primary:#f7b733;
+    --secondary:#fc4a1a;
+}
+
+body.light-theme{
+    --bg:#f5f5f5;
+    --card:#ffffff;
+    --glass:rgba(255,255,255,.75);
+    --text:#111;
+    --text2:#555;
+}
+
+/*================ RESET =================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:.4s;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+/*================ LOADER =================*/
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h1{
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.spinner{
+    width:60px;
+    height:60px;
+    border:5px solid rgba(255,255,255,.2);
+    border-top:5px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:auto;
+}
+
+.loader-content p{
+    margin-top:15px;
+    color:#fff;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/*================ BACK TO TOP =================*/
+
+#topBtn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(45deg,var(--primary),var(--secondary));
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:999;
+}
+
+#topBtn.show{
+    opacity:1;
+    visibility:visible;
+}
+
+/*================ NAVBAR =================*/
+
+.custom-navbar{
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(18px);
+    transition:.4s;
+    padding:15px 0;
+}
+
+.custom-navbar.scrolled{
+    background:var(--card);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.navbar-brand{
+    color:var(--primary)!important;
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:var(--text)!important;
+    margin:0 10px;
+    position:relative;
+    transition:.3s;
+}
+
+.nav-link.active,
+.nav-link:hover{
+    color:var(--primary)!important;
+}
+
+.theme-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:var(--glass);
+    color:var(--primary);
+    font-size:18px;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    transform:rotate(180deg);
+}
+
+.login-btn{
+    padding:10px 25px;
+    border-radius:30px;
+    background:linear-gradient(45deg,var(--primary),var(--secondary));
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-3px);
+    color:#fff;
+}
+
+/*================ HERO =================*/
+
+.contact-hero{
+    min-height:65vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600")
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.12);
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.contact-hero h1{
+    font-size:60px;
+    font-weight:700;
+    color:#fff;
+}
+
+.contact-hero p{
+    max-width:700px;
+    margin:20px auto 0;
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/*================ CONTACT INFO =================*/
+
+.contact-info {
+  padding: 90px 0;
+}
+
+.info-card {
+  background: var(--glass);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: .4s;
+  height: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(247, 183, 51, .2);
+}
+
+.info-card i {
+  font-size: 42px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.info-card h4 {
+  color: var(--text);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.info-card p {
+  color: var(--text2);
+  margin: 0;
+  line-height: 1.8;
+}
+
+/*================ CONTACT FORM =================*/
+
+.contact-form-section {
+  padding: 100px 0;
+}
+
+.contact-card {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 25px;
+  padding: 45px;
+}
+
+.contact-card h2 {
+  color: var(--text);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  color: var(--text2);
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, .08);
+  border: 1px solid rgba(255, 255, 255, .12);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 14px 18px;
+  transition: .3s;
+}
+
+.form-control::placeholder {
+  color: var(--text2);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, .12);
+  color: var(--text);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 .2rem rgba(247, 183, 51, .2);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.send-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(247, 183, 51, .35);
+}
+
+/*================ MAP =================*/
+
+.map-card {
+  height: 100%;
+  min-height: 550px;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .25);
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*================ FAQ =================*/
+
+.faq {
+  padding: 100px 0;
+}
+
+.section-title span {
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 10px 0;
+}
+
+.section-title p {
+  color: var(--text2);
+}
+
+.accordion-item {
+  background: var(--glass);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 15px !important;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  padding: 18px 22px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(247, 183, 51, .15);
+  color: var(--primary);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: var(--text2);
+  background: transparent;
+  line-height: 1.8;
+}
+
+/*================ CTA =================*/
+
+.contact-cta {
+  padding: 100px 0;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  border-radius: 25px;
+  padding: 70px 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.cta-box h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-box p {
+  color: #d7d7d7;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(247, 183, 51, .35);
+}
+
+/*================ FOOTER =================*/
+
+.footer {
+  background: #0b0b0b;
+  padding: 80px 0 25px;
+}
+
+.footer-logo {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.footer-text {
+  color: #bdbdbd;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer ul li a {
+  color: #bdbdbd;
+  transition: .3s;
+}
+
+.footer ul li a:hover {
+  color: var(--primary);
+  padding-left: 6px;
+}
+
+.footer p {
+  color: #bdbdbd;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+  transition: .3s;
+}
+
+.social-links a:hover {
+  background: var(--primary);
+  transform: translateY(-5px);
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, .1);
+  margin: 40px 0 20px;
+}
+
+.footer-bottom {
+  color: #bdbdbd;
+  font-size: 15px;
+}
+
+/*================ RESPONSIVE =================*/
+
+@media (max-width:992px) {
+  
+  .contact-hero {
+    min-height: 55vh;
+  }
+  
+  .contact-hero h1 {
+    font-size: 46px;
+  }
+  
+  .contact-card {
+    padding: 35px;
+  }
+  
+  .contact-card h2 {
+    font-size: 30px;
+  }
+  
+  .map-card {
+    min-height: 420px;
+    margin-top: 30px;
+  }
+  
+  .cta-box h2 {
+    font-size: 34px;
+  }
+  
+}
+
+@media (max-width:768px) {
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 36px;
+  }
+  
+  .contact-hero p {
+    font-size: 16px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+  }
+  
+  .contact-card {
+    padding: 25px;
+  }
+  
+  .contact-card h2 {
+    font-size: 28px;
+  }
+  
+  .info-card {
+    padding: 30px 20px;
+  }
+  
+  .info-card i {
+    font-size: 36px;
+  }
+  
+  .cta-box {
+    padding: 50px 25px;
+  }
+  
+  .cta-box h2 {
+    font-size: 30px;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width:576px) {
+  
+  .contact-hero {
+    min-height: 50vh;
+  }
+  
+  .contact-hero h1 {
+    font-size: 30px;
+  }
+  
+  .hero-badge {
+    font-size: 14px;
+  }
+  
+  .contact-card {
+    padding: 20px;
+  }
+  
+  .contact-card h2 {
+    font-size: 24px;
+  }
+  
+  .form-control {
+    padding: 12px 15px;
+  }
+  
+  .send-btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+  
+  .map-card {
+    min-height: 320px;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .cta-box h2 {
+    font-size: 26px;
+  }
+  
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #topBtn {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+}
+</style>
+
+<script type="text/javascript" charset="utf-8">
+    // ================= LOADER =================
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  
+  if (loader) {
+    loader.style.opacity = "0";
+    loader.style.transition = "0.5s";
+    
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  }
+});
+
+// ================= NAVBAR SCROLL =================
+
+const navbar = document.querySelector(".custom-navbar");
+
+window.addEventListener("scroll", () => {
+  if (navbar) {
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  }
+});
+
+// ================= BACK TO TOP =================
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (topBtn) {
+    topBtn.classList.toggle("show", window.scrollY > 400);
+  }
+});
+
+if (topBtn) {
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+// ================= THEME TOGGLE =================
+
+const themeBtn = document.getElementById("themeBtn");
+
+if (themeBtn) {
+  
+  const icon = themeBtn.querySelector("i");
+  
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-theme");
+    icon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+  }
+  
+  themeBtn.addEventListener("click", () => {
+    
+    document.body.classList.toggle("light-theme");
+    
+    if (document.body.classList.contains("light-theme")) {
+      localStorage.setItem("theme", "light");
+      icon.classList.replace("bi-moon-stars-fill", "bi-sun-fill");
+    } else {
+      localStorage.setItem("theme", "dark");
+      icon.classList.replace("bi-sun-fill", "bi-moon-stars-fill");
+    }
+    
+  });
+  
+}
+
+// ================= AOS =================
+
+AOS.init({
+  duration: 1000,
+  once: true,
+  offset: 120,
+  easing: "ease-in-out"
+});
+
+// ================= CONTACT FORM =================
+
+const contactForm = document.querySelector("form");
+
+if (contactForm) {
+  
+  contactForm.addEventListener("submit", function(e) {
+    
+    e.preventDefault();
+    
+    alert("✅ Thank you! Your message has been sent successfully.");
+    
+    contactForm.reset();
+    
+  });
+  
+}
+</script>
+
+              
+              
